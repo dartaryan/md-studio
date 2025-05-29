@@ -1,0 +1,38 @@
+{
+  "name": "Document",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Document title"
+    },
+    "markdown_content": {
+      "type": "string",
+      "description": "The markdown content"
+    },
+    "custom_css": {
+      "type": "string",
+      "description": "Custom CSS for styling"
+    },
+    "theme": {
+      "type": "string",
+      "enum": [
+        "default",
+        "github",
+        "dark",
+        "medium",
+        "minimal"
+      ],
+      "default": "default",
+      "description": "Selected theme"
+    },
+    "author": {
+      "type": "string",
+      "description": "Document author"
+    }
+  },
+  "required": [
+    "title",
+    "markdown_content"
+  ]
+}
